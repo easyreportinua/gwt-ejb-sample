@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd"
+             version="1.0">
+
+    <persistence-unit name="dynatable">
+        <provider>org.hibernate.ejb.HibernatePersistence</provider>
+
+        <!-- JNDI name of the database resource to use -->
+        <jta-data-source>java:/DynaTable</jta-data-source>
+
+
+        <!-- JPA spec says orm.xml is found by default name, so following is really unnecessary -->
+        <!-- ID generator info -->
+        <mapping-file>META-INF/orm.xml</mapping-file>
+        <jar-file>core.jar</jar-file>
+
+        <properties>
+            <property name="hibernate.show_sql" value="false"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
+            <property name="hibernate.cache.use_query_cache" value="false"/>
+            <property name="hibernate.cache.use_second_level_cache" value="false"/>
+            <property name="hibernate.cache.use_minimal_puts" value="true"/>
+            <property name="hibernate.cache.region.factory_class"
+                      value="org.hibernate.cache.jbc2.MultiplexedJBossCacheRegionFactory"/>
+            <property name="hibernate.hbm2ddl.auto" value="create-drop"/>
+
+            <property name="javax.persistence.transactionType" value="JTA"/>
+            <property name="hibernate.jdbc.batch_size" value="20"/>
+            <property name="com.intellij.javaee.persistence.datasource" value="DynaTable"/>
+            <property name="hibernate.session_factory_name" value="java:/DynaTableSessionFactory"/>
+        </properties>
+    </persistence-unit>
+
+
+</persistence>

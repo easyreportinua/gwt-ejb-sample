@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ear" build-on-make="true" name="ear:ear exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/dynatable.ear</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="ear/javaeeApplication/javaEEApplication" />
+      <element id="directory" name="web.war">
+        <element id="artifact" artifact-name="web:war exploded" />
+      </element>
+      <element id="directory" name="ejb.jar">
+        <element id="artifact" artifact-name="services:ejb jar exploded" />
+      </element>
+      <element id="artifact" artifact-name="core" />
+      <element id="library" level="project" name="gwt-servlet" />
+      <element id="dir-copy" path="$PROJECT_DIR$/ear/conf" />
+    </root>
+  </artifact>
+</component>

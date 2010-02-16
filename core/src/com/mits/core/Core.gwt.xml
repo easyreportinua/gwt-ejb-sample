@@ -1,0 +1,3 @@
+<module rename-to="com.mits.core.Core">
+  <inherits name='com.google.gwt.user.User' />
+</module>
