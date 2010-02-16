@@ -28,7 +28,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Java EE 5" level="project" />
-    <orderEntry type="module" module-name="core" />
+    <orderEntry type="module" module-name="core" scope="PROVIDED" />
   </component>
 </module>
 

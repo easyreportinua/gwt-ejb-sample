@@ -13,10 +13,10 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.sample.dynatable.server;
+package dynatable.server;
 
-import com.google.gwt.sample.dynatable.client.SchoolCalendarService;
-import com.google.gwt.sample.dynatable.utils.GWTService;
+import dynatable.client.SchoolCalendarService;
+import dynatable.utils.GWTService;
 import com.mits.core.client.Person;
 import service.UserManager;
 

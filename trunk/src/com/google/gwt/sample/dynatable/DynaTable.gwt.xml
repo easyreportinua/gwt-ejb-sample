@@ -16,7 +16,7 @@
     <inherits name='com.google.gwt.user.User'/>
     <inherits name='com.google.gwt.rpc.RPC'/>
     <inherits name="com.mits.core.Core"/>
-    <entry-point class='com.google.gwt.sample.dynatable.client.DynaTable'/>
+    <entry-point class='dynatable.client.DynaTable'/>
     <servlet path='/calendar'
-             class='com.google.gwt.sample.dynatable.server.SchoolCalendarServiceImpl'/>
+             class='dynatable.server.SchoolCalendarServiceImpl'/>
 </module>
