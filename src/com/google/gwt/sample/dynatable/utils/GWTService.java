@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.sample.dynatable.utils;
+package dynatable.utils;
 
 /**
  * Updated by Jeff Dwyer to add HibernateFilter and allow explicit
@@ -37,8 +37,9 @@ package com.google.gwt.sample.dynatable.utils;
 import com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException;
 import com.google.gwt.user.client.rpc.RemoteService;
 import com.google.gwt.user.client.rpc.SerializationException;
-import com.google.gwt.user.server.rpc.*;
 import com.google.gwt.user.server.rpc.RPC;
+import com.google.gwt.user.server.rpc.RPCRequest;
+import com.google.gwt.user.server.rpc.RemoteServiceServlet;
 
 
 public class GWTService extends RemoteServiceServlet implements RemoteService {

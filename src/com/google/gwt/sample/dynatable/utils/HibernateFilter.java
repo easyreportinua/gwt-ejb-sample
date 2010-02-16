@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.sample.dynatable.utils;
+package dynatable.utils;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -33,6 +33,7 @@ public class HibernateFilter {
     private static final Logger log = Logger
             .getLogger(HibernateFilter.class);
 
+    @SuppressWarnings("unchecked")
     public static Object filter(Object instance) {
         if (instance == null) {
             return instance;

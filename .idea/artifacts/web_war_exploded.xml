@@ -2,14 +2,14 @@
   <artifact type="exploded-war" name="web:war exploded">
     <output-path>$PROJECT_DIR$/out/artifacts/dynatable.war</output-path>
     <root id="root">
-      <element id="javaee-facet-resources" facet="GwtDynaTable/web/Web" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="GwtDynaTable" />
+          <element id="module-output" name="webapp" />
         </element>
       </element>
-      <element id="gwt-compiler-output" facet="GwtDynaTable/gwt/GWT" />
       <element id="gwt-compiler-output" facet="core/gwt/GWT" />
+      <element id="javaee-facet-resources" facet="webapp/web/Web" />
+      <element id="gwt-compiler-output" facet="webapp/gwt/GWT" />
     </root>
   </artifact>
 </component>

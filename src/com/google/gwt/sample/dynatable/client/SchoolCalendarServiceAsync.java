@@ -13,12 +13,11 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.sample.dynatable.client;
+package dynatable.client;
 
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.mits.core.client.Person;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**

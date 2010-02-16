@@ -5,7 +5,7 @@
 	version="1.0">
 
     	<table-generator
-    	    name="CS_ID_Gen"
+    	    name="ID_Gen"
     	    initial-value="10000"
     		allocation-size="1" />
 

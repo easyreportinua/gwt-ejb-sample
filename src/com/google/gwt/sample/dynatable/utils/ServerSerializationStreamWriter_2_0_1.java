@@ -1,4 +1,4 @@
-package com.google.gwt.sample.dynatable.utils;
+package dynatable.utils;
 
 /*
  * Copyright 2008 Google Inc.
@@ -16,6 +16,13 @@ package com.google.gwt.sample.dynatable.utils;
  * the License.
  */
 
+import com.google.gwt.user.client.rpc.SerializationException;
+import com.google.gwt.user.client.rpc.impl.AbstractSerializationStreamWriter;
+import com.google.gwt.user.server.Base64Utils;
+import com.google.gwt.user.server.rpc.SerializationPolicy;
+import com.google.gwt.user.server.rpc.impl.SerializabilityUtil;
+import com.google.gwt.user.server.rpc.impl.TypeNameObfuscator;
+
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
@@ -25,12 +32,6 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 import java.util.*;
 
-import com.google.gwt.user.client.rpc.SerializationException;
-import com.google.gwt.user.client.rpc.impl.AbstractSerializationStreamWriter;
-import com.google.gwt.user.server.Base64Utils;
-import com.google.gwt.user.server.rpc.SerializationPolicy;
-import com.google.gwt.user.server.rpc.impl.*;
-
 /**
  * For internal use only. Used for server call serialization. This class is
  * carefully matched with the client-side version.
@@ -38,7 +39,7 @@ import com.google.gwt.user.server.rpc.impl.*;
 public final class ServerSerializationStreamWriter_2_0_1 extends
     AbstractSerializationStreamWriter {
 
-    public void setValueWriter(Class<?> clazz, com.google.gwt.sample.dynatable.utils.ValueWriter writer) {
+    public void setValueWriter(Class<?> clazz, dynatable.utils.ValueWriter writer) {
         CLASS_TO_VALUE_WRITER.put(clazz, writer);
     }
     
@@ -103,7 +104,7 @@ public final class ServerSerializationStreamWriter_2_0_1 extends
   /**
    * Enumeration used to provided typed instance writers.
    */
-  private enum ValueWriterEnum implements com.google.gwt.sample.dynatable.utils.ValueWriter {
+  private enum ValueWriterEnum implements dynatable.utils.ValueWriter {
     BOOLEAN {
       @Override
       public void write(ServerSerializationStreamWriter_2_0_1 stream, Object instance) {
@@ -281,7 +282,7 @@ public final class ServerSerializationStreamWriter_2_0_1 extends
   }
 
   /**
-   * Map of {@link Class} objects to {@link com.google.gwt.sample.dynatable.utils.ServerSerializationStreamWriter_2_0_1.ValueWriterEnum}s.
+   * Map of {@link Class} objects to {@link dynatable.utils.ServerSerializationStreamWriter_2_0_1.ValueWriterEnum}s.
    */
   private static final Map<Class<?>, ValueWriter> CLASS_TO_VALUE_WRITER = new IdentityHashMap<Class<?>, ValueWriter>();
 
