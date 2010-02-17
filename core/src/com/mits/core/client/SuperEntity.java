@@ -1,7 +1,5 @@
 package com.mits.core.client;
 
-import com.mits.core.utils.LastModifiedUpdate;
-
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;

@@ -1,6 +1,4 @@
-package com.mits.core.utils;
-
-import com.mits.core.client.SuperEntity;
+package com.mits.core.client;
 
 import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
