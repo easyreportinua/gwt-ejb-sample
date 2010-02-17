@@ -11,12 +11,11 @@
     <!-- Servlets -->
     <servlet>
         <servlet-name>calendar</servlet-name>
-        <servlet-class>dynatable.server.SchoolCalendarServiceImpl</servlet-class>
+        <servlet-class>com.google.gwt.sample.dynatable.server.SchoolCalendarServiceImpl</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>calendar</servlet-name>
         <url-pattern>/dynatable/calendar</url-pattern>
     </servlet-mapping>
-
 
 </web-app>
