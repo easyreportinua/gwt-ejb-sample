@@ -2,8 +2,6 @@
   <library name="gwt-user">
     <CLASSES>
       <root url="jar://$GWT_TOOLS$/gwt-user.jar!/" />
-      <root url="jar://$GWT_TOOLS$/gwt-api-checker.jar!/" />
-      <root url="jar://$GWT_TOOLS$/gwt-dev.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

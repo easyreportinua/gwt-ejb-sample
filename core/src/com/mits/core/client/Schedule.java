@@ -15,8 +15,6 @@
  */
 package com.mits.core.client;
 
-import com.google.gwt.user.client.rpc.IsSerializable;
-
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;

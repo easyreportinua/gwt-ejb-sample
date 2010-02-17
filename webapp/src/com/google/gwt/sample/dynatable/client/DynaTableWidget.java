@@ -13,21 +13,12 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package dynatable.client;
+package com.google.gwt.sample.dynatable.client;
 
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
-import dynatable.client.DynaTableDataProvider.RowDataAcceptor;
 import com.google.gwt.user.client.rpc.InvocationException;
-import com.google.gwt.user.client.ui.Button;
-import com.google.gwt.user.client.ui.Composite;
-import com.google.gwt.user.client.ui.DialogBox;
-import com.google.gwt.user.client.ui.DockPanel;
-import com.google.gwt.user.client.ui.Grid;
-import com.google.gwt.user.client.ui.HTML;
-import com.google.gwt.user.client.ui.HasAlignment;
-import com.google.gwt.user.client.ui.HorizontalPanel;
-import com.google.gwt.user.client.ui.VerticalPanel;
+import com.google.gwt.user.client.ui.*;
 
 /**
  * A composite Widget that implements the main interface for the dynamic table,
@@ -114,7 +105,7 @@ public class DynaTableWidget extends Composite {
     }
   }
 
-  private class RowDataAcceptorImpl implements RowDataAcceptor {
+  private class RowDataAcceptorImpl implements DynaTableDataProvider.RowDataAcceptor {
     public void accept(int startRow, String[][] data) {
 
       int destRowCount = getDataRowCount();
@@ -181,7 +172,7 @@ public class DynaTableWidget extends Composite {
       + "<p>Click on the Remote Procedure Call link above for more information "
       + "on GWT's RPC infrastructure.";
 
-  private final RowDataAcceptor acceptor = new RowDataAcceptorImpl();
+  private final DynaTableDataProvider.RowDataAcceptor acceptor = new RowDataAcceptorImpl();
 
   private final Grid grid = new Grid();
 

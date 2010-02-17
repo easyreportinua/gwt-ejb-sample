@@ -1,4 +1,4 @@
-package dynatable.utils;
+package com.google.gwt.sample.dynatable.utils;
 
 /*
  * Copyright 2008 Google Inc.
@@ -39,7 +39,7 @@ import java.util.*;
 public final class ServerSerializationStreamWriter_2_0_1 extends
     AbstractSerializationStreamWriter {
 
-    public void setValueWriter(Class<?> clazz, dynatable.utils.ValueWriter writer) {
+    public void setValueWriter(Class<?> clazz, ValueWriter writer) {
         CLASS_TO_VALUE_WRITER.put(clazz, writer);
     }
     
@@ -104,7 +104,7 @@ public final class ServerSerializationStreamWriter_2_0_1 extends
   /**
    * Enumeration used to provided typed instance writers.
    */
-  private enum ValueWriterEnum implements dynatable.utils.ValueWriter {
+  private enum ValueWriterEnum implements ValueWriter {
     BOOLEAN {
       @Override
       public void write(ServerSerializationStreamWriter_2_0_1 stream, Object instance) {
@@ -282,7 +282,7 @@ public final class ServerSerializationStreamWriter_2_0_1 extends
   }
 
   /**
-   * Map of {@link Class} objects to {@link dynatable.utils.ServerSerializationStreamWriter_2_0_1.ValueWriterEnum}s.
+   * Map of {@link Class} objects to {@link ServerSerializationStreamWriter_2_0_1.ValueWriterEnum}s.
    */
   private static final Map<Class<?>, ValueWriter> CLASS_TO_VALUE_WRITER = new IdentityHashMap<Class<?>, ValueWriter>();
 

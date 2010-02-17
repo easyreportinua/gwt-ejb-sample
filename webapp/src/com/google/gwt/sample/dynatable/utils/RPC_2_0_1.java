@@ -1,4 +1,4 @@
-package dynatable.utils;
+package com.google.gwt.sample.dynatable.utils;
 
 import com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException;
 import com.google.gwt.user.client.rpc.RemoteService;

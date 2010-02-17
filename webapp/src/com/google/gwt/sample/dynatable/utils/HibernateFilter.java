@@ -13,12 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package dynatable.utils;
-
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.HashSet;
+package com.google.gwt.sample.dynatable.utils;
 
 import org.apache.log4j.Logger;
 import org.hibernate.Hibernate;
@@ -28,6 +23,11 @@ import org.hibernate.collection.PersistentMap;
 import org.hibernate.collection.PersistentSet;
 import org.hibernate.proxy.HibernateProxy;
 import org.hibernate.proxy.LazyInitializer;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.HashSet;
 
 public class HibernateFilter {
     private static final Logger log = Logger
