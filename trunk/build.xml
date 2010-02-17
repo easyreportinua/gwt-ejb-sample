@@ -15,7 +15,7 @@
 
     <target name="ear">
         <sequential>
-            <delete dir="${ear.dir" failonerror="false"/>
+            <delete dir="${ear.dir}" failonerror="false"/>
             <mkdir dir="${ear.dir}"/>
             <mkdir dir="${ear.dir}/web.war"/>
             <mkdir dir="${ear.dir}/ejb.jar"/>
@@ -27,6 +27,10 @@
                 <fileset dir="ear/conf" includes="*"/>
                 <fileset dir="${gwt.home}" includes="gwt-servlet.jar"/>
             </copy>
+            <mkdir dir="out/production/core"/>
+            <mkdir dir="out/production/services"/>
+            <mkdir dir="out/production/webapp"/>
+
             <javac srcdir="core/src" destdir="out/production/core">
                 <classpath>
                     <path refid="compile.class.path"/>
