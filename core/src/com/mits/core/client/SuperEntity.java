@@ -5,7 +5,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 @MappedSuperclass
-@EntityListeners(LastModifiedUpdate.class)
+@EntityListeners(value = {LastModifiedUpdate.class})
 public class SuperEntity implements Serializable {
 
     private static final long serialVersionUID = 1L;
