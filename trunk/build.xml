@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<project name="Build" default="ear">
+    <property name="jboss.home" value="e:/Apps/jboss-5.1.0.GA"/>
+    <property name="gwt.home" value="e:/Lib/gwt-2.0.1"/>
+
+
+    <property name="ear.dir" value="out/ant/dynatable.ear"/>
+
+    <path id="compile.class.path">
+        <fileset dir="${jboss.home}/common/lib" includes="*.jar"/>
+        <fileset dir="${gwt.home}" includes="gwt-servlet.jar"/>
+        <fileset dir="${gwt.home}" includes="gwt-user.jar"/>
+    </path>
+
+
+    <target name="ear">
+        <sequential>
+            <delete dir="${ear.dir" failonerror="false"/>
+            <mkdir dir="${ear.dir}"/>
+            <mkdir dir="${ear.dir}/web.war"/>
+            <mkdir dir="${ear.dir}/ejb.jar"/>
+
+            <copy todir="${ear.dir}/META-INF">
+                <fileset dir="ear/META-INF" includes="*"/>
+            </copy>
+            <copy todir="${ear.dir}">
+                <fileset dir="ear/conf" includes="*"/>
+                <fileset dir="${gwt.home}" includes="gwt-servlet.jar"/>
+            </copy>
+            <javac srcdir="core/src" destdir="out/production/core">
+                <classpath>
+                    <path refid="compile.class.path"/>
+                </classpath>
+            </javac>
+            <jar basedir="out/production/core" destfile="${ear.dir}/core.jar"/>
+
+            <javac srcdir="services/src" destdir="out/production/services">
+                <classpath>
+                    <path refid="compile.class.path"/>
+                    <path location="out/production/core"/>
+                </classpath>
+            </javac>
+
+            <javac srcdir="webapp/src" destdir="out/production/webapp">
+                <classpath>
+                    <path refid="compile.class.path"/>
+                    <path location="out/production/core"/>
+                    <path location="out/production/services"/>
+                </classpath>
+            </javac>
+
+            <copy todir="${ear.dir}/ejb.jar">
+                <fileset dir="out/production/services" includes="*/**"/>
+                <fileset dir="services" includes="META-INF/**"/>
+            </copy>
+
+            <copy todir="${ear.dir}/web.war">
+                <fileset dir="webapp/war" includes="*/**"/>
+            </copy>
+            <copy todir="${ear.dir}/web.war/WEB-INF/classes">
+                <fileset dir="out/production/webapp" includes="*/**"/>
+            </copy>
+            <java classname="com.google.gwt.dev.Compiler" fork="true">
+                <jvmarg value="-Xmx128m"/>
+                <arg value="-war"/>
+                <arg value="${ear.dir}/web.war"/>
+                <arg value="com.google.gwt.sample.dynatable.DynaTable"/>
+                <classpath>
+                    <pathelement location="core/src"/>
+                    <pathelement location="webapp/src"/>
+                    <pathelement location="${gwt.home}/gwt-dev.jar"/>
+                    <path refid="compile.class.path"/>
+                </classpath>
+            </java>
+
+        </sequential>
+    </target>
+</project>
