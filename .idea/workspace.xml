@@ -16,27 +16,7 @@
   </component>
   <component name="ChangeListManager" verified="true">
     <list default="true" readonly="true" id="e1ed38f3-f99f-4bde-9404-3659fc162bcd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/src/com/google/gwt/sample/dynatable/utils/ServerSerializationStreamWriter_2_0_1.java" afterPath="$PROJECT_DIR$/webapp/src/com/google/gwt/sample/dynatable/utils/ServerSerializationStreamWriter_2_0_1.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/src/com/google/gwt/sample/dynatable/utils/CharVector.java" afterPath="$PROJECT_DIR$/webapp/src/com/google/gwt/sample/dynatable/utils/CharVector.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/src/com/google/gwt/sample/dynatable/utils/ValueWriter.java" afterPath="$PROJECT_DIR$/webapp/src/com/google/gwt/sample/dynatable/utils/ValueWriter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/src/com/google/gwt/sample/dynatable/utils/RPC_2_0_1.java" afterPath="$PROJECT_DIR$/webapp/src/com/google/gwt/sample/dynatable/utils/RPC_2_0_1.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/src/com/google/gwt/sample/dynatable/client/DynaTable.java" afterPath="$PROJECT_DIR$/webapp/src/com/google/gwt/sample/dynatable/client/DynaTable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/src/com/google/gwt/sample/dynatable/client/DynaTableWidget.java" afterPath="$PROJECT_DIR$/webapp/src/com/google/gwt/sample/dynatable/client/DynaTableWidget.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/war/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/webapp/war/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/src/com/google/gwt/sample/dynatable/client/DynaTableDataProvider.java" afterPath="$PROJECT_DIR$/webapp/src/com/google/gwt/sample/dynatable/client/DynaTableDataProvider.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/src/com/google/gwt/sample/dynatable/client/SchoolCalendarServiceAsync.java" afterPath="$PROJECT_DIR$/webapp/src/com/google/gwt/sample/dynatable/client/SchoolCalendarServiceAsync.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/src/com/google/gwt/sample/dynatable/utils/GWTService.java" afterPath="$PROJECT_DIR$/webapp/src/com/google/gwt/sample/dynatable/utils/GWTService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/src/com/google/gwt/sample/dynatable/client/DayFilterWidget.java" afterPath="$PROJECT_DIR$/webapp/src/com/google/gwt/sample/dynatable/client/DayFilterWidget.java" />
-      <change type="DELETED" beforePath="J:\Projects\gwt-ejb-sample\webapp\war\test.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/src/com/google/gwt/sample/dynatable/client/SchoolCalendarWidget.java" afterPath="$PROJECT_DIR$/webapp/src/com/google/gwt/sample/dynatable/client/SchoolCalendarWidget.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/src/com/google/gwt/sample/dynatable/utils/HibernateFilter.java" afterPath="$PROJECT_DIR$/webapp/src/com/google/gwt/sample/dynatable/utils/HibernateFilter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/src/com/google/gwt/sample/dynatable/DynaTable.gwt.xml" afterPath="$PROJECT_DIR$/webapp/src/com/google/gwt/sample/dynatable/DynaTable.gwt.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/src/com/google/gwt/sample/dynatable/server/SchoolCalendarServiceImpl.java" afterPath="$PROJECT_DIR$/webapp/src/com/google/gwt/sample/dynatable/server/SchoolCalendarServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/gwt_user.xml" afterPath="$PROJECT_DIR$/.idea/libraries/gwt_user.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/src/com/google/gwt/sample/dynatable/client/SchoolCalendarService.java" afterPath="$PROJECT_DIR$/webapp/src/com/google/gwt/sample/dynatable/client/SchoolCalendarService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/com/mits/core/client/Schedule.java" afterPath="$PROJECT_DIR$/core/src/com/mits/core/client/Schedule.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gwt-ejb-sample.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -162,7 +142,7 @@
       <file leaf-file-name="DynaTable.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webapp/war/DynaTable.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="79" selection-start="1847" selection-end="1847" vertical-scroll-proportion="0.95728153">
+            <state line="16" column="101" selection-start="1121" selection-end="1121" vertical-scroll-proportion="0.5281553">
               <folding />
             </state>
           </provider>
@@ -752,7 +732,7 @@
     <frame x="-4" y="-4" width="1688" height="1028" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32992035" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32992035" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JavaEE:App" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24969324" sideWeight="0.4960182" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -770,7 +750,7 @@
       <window_info id="EJB" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="JProfiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24969324" sideWeight="0.66211605" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24969324" sideWeight="0.66211605" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -967,7 +947,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp/war/DynaTable.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="79" selection-start="1847" selection-end="1847" vertical-scroll-proportion="0.95728153">
+        <state line="16" column="101" selection-start="1121" selection-end="1121" vertical-scroll-proportion="0.5281553">
           <folding />
         </state>
       </provider>
@@ -982,7 +962,6 @@
               <option name="proportions">
                 <list>
                   <option value="0.2" />
-                  <option value="0.5" />
                 </list>
               </option>
             </SplitterProportionsDataImpl>
